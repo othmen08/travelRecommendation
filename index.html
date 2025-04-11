@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><img class="Logo_header" src="images/Logo_header.png" alt="Travel Logo" /></a>
+      <nav class="nav">
+        <ul class="nav_links">
+          <li class="nav_link"><a href="#">Home</a></li>
+          <li class="nav_link"><a href="about.html">About us</a></li>
+          <li class="nav_link"><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="search_container">
+        <input
+          type="text"
+          id="search_input"
+          class="search"
+          placeholder="Enter a destination or keyword"
+          aria-label="Search destinations"
+        />
+        <label for="search_input">
+          <img src="images/search.png" alt="Search icon" width="20" height="20"/>
+        </label>
+        <button id="btn_search" type="button" onclick="search()">Search</button>
+        <button id="btn_clear" type="button" onclick="clearSearch()">Clear</button>
+      </div>
+    </header>
+    <main>
+      <div class="home">
+        <div class="hero">
+          <h1 class="hero_title">Explore <br />Dream <br />Destination</h1>
+          <p class="hero_description">
+            We invite you to discover the most beautiful places in the world, where dreams become reality. 
+            Whether it's paradise beaches, historic cities or breathtaking natural landscapes, 
+            each destination offers a unique and unforgettable adventure. 
+            Let yourself be carried away by the magic of travel and set off to meet fascinating cultures, 
+            authentic traditions and moments of escape that will mark your mind forever.
+          </p>
+          <button class="hero_button">Book Now</button>
+        </div>
+        <div class="search_results">
+          <!-- Search results will be dynamically inserted here -->
+        </div>
+      </div>
+    </main>
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
